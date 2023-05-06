@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armour Homes</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&family=Genos:wght@100&family=Poiret+One&family=Raleway+Dots&family=Raleway:wght@700&family=Stick+No+Bills&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240ae299b6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="/"><img src="{{ url_for('static', filename='Images/Armour.png')}}" alt="Armour Homes"></a>
+                <a class="logoText" href="/">Armour Homes</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Products</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        </section>
+
+         <section class="sub-head">
+            <div class="second">
+                <h1>Our products</h1>
+            </div>
+         </section>
+         
+         <section class="tile">
+            <div class="write">
+                <h1>Products we offer</h1>
+            </div>
+         </section>
+
+         <section class="products">
+            <div class="product-row">
+                <h1>Interior design</h1>
+                <p>Experienced designers design the interior of your exisiting home into a way that you would like to achieve a healthier and more aesthetically pleasing environment in using the space. Includes arranging your things in a neat and organized manner.</p>
+            <div id="price">
+                <h1>Price:</h1>
+                <p>$120 per hour (Includes labour and material prices)</p>
+                <p id="note">Prices are negotiable.</p>
+            </div>
+            </div>
+            <div class="product-row">
+                <img src="{{ url_for('static', filename='Images/1.jpeg')}}">
+            </div>
+         </section>
+
+         <section class="products">
+            <div class="product-row-reverse">
+                <h1>Paint Job</h1>
+                <p>Painting your walls in any design. Colors and design are chosen by you.</p>
+            <div id="price">
+                <h1>Price:</h1>
+                <p>$3.5/sqft (Includes labour and material)</p>
+                <p id="note">Prices are negotiable.</p>
+            </div>
+            </div>
+            <div class="product-row-reverse">
+                <img src="{{ url_for('static', filename='Images/2.jpeg')}}">
+            </div>
+         </section>
+
+         <section class="products">
+            <div class="product-row">
+                <h1>Customizable Homes</h1>
+                <p>We sell brand new homes desgined completely by you. Local builders around you don't provide this kind of feature. So choose Armour Homes to live in a place you are satisfied with.</p>
+            <div id="price">
+                <h1>Price:</h1>
+                <p>$125/sqft (Includes labour and material prices)</p>
+                <p id="note">Prices are negotiable.</p>
+            </div>
+            </div>
+            <div class="product-row">
+                <img src="{{ url_for('static', filename='Images/3.jpeg')}}">
+            </div>
+         </section>
+
+         <section class="footer">
+            <h4>Credits</h4>
+            <div class="icons">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-share"></i>
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <p>Made by Samvrith using CSS and HTML</p>
+        </section>
+        
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu()
+            {
+                navLinks.style.right = "0"
+            }
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

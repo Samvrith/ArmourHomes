@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armour Homes</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100;400&family=Poiret+One&family=Raleway:wght@700&family=Rubik+80s+Fade&family=Stick+No+Bills&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240ae299b6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="/"><img src="{{ url_for('static', filename='Images/Armour.png')}}" alt="Armour Homes"></a>
+                <a class="logoText" href="/">Armour Homes</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Products</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        </section>
+
+         <section class="sub-head">
+            <div class="second">
+                <h1>About Us</h1>
+            </div>
+         </section>
+
+         <section class="background">
+            <div class="product-row">
+                <h1>Background</h1>
+                <p>The idea to develop this company first popped up when I went to buy a brand new home. I liked the space and the location it was in. However, I didn't like the design of the house which is 
+                    a big thing. In order for someone to live happily in their house, they need to like it. Some people adjust with the design, while some people find houses that they like. This company
+                    is for people who want to customize their home in a way they like. 
+                </p>
+            </div>
+         </section>
+
+         <section class="background">
+            <div class="product-row-reverse">
+                <h1>Purpose</h1>
+                <p>Currently we are providing services to home owners. We can renovate your current home into the way you like or we can also build you a new home designed by you.
+                    This is the whole purpose of the company, so we're flexible to do anything that satisfies the customer. 
+                </p>
+            </div>
+         </section>
+
+         <section class="footer">
+            <h4>Credits</h4>
+            <div class="icons">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-share"></i>
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <p>Made by Samvrith using CSS and HTML</p>
+        </section>
+        
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu()
+            {
+                navLinks.style.right = "0"
+            }
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

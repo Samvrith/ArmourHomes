@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armour Homes</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&family=Genos:wght@100&family=Poiret+One&family=Raleway+Dots&family=Raleway:wght@700&family=Stick+No+Bills&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240ae299b6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="/"><img src="{{ url_for('static', filename='Images/Armour.png')}}" alt="Armour Homes"></a>
+                <a class="logoText" href="/">Armour Homes</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Products</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        </section>
+
+<section class="sub-head">
+    <div class="third">
+        <h1>Contact Us</h1>
+    </div>
+</section>
+
+<section class="questions">
+    <div>
+        <h1>If you have any questions, feel free to send us an email from the text box below.</h1>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact-row">
+        <div class="contact-col">
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+                <h5>Headquarters</h5>
+                <p>1234 Something Dr</p>
+                <p>Frisco, Tx, 75035</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+                <h5>Phone</h5>
+                <p>+1 (123) 456-9089</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h5>Email</h5>
+                <p>info@armourhomes.com</p>
+            </span>
+        </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email address" required>
+                <input type="text" placeholder="Enter the subject" required>
+                <textarea rows="8" placeholder="Message"></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+         
+<section class="footer">
+    <h4>Credits</h4>
+    <div class="icons">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-share"></i>
+        <i class="fa-solid fa-hand"></i>
+    </div>
+    <p>Made by Samvrith using CSS and HTML</p>
+</section>
+
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu()
+            {
+                navLinks.style.right = "0"
+            }
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

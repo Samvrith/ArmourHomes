@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armour Homes</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100;400&family=Poiret+One&family=Raleway:wght@700&family=Rubik+80s+Fade&family=Stick+No+Bills&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240ae299b6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="/"><img src="{{ url_for('static', filename='Images/Armour.png')}}" alt="Armour Homes"></a>
+                <a class="logoText" href="/">Armour Homes</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Products</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        </section>
+    <section class="head">
+            <div class="first">
+                <h1>Welcome to Armour Homes</h1>
+                <p>The city's first fully customizable home builder. The place where your creativiity becomes your home!</p>
+            </div>
+    </section>
+
+        <section class="footer">
+            <h4>Credits</h4>
+            <div class="icons">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-share"></i>
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <p>Made by Samvrith using CSS and HTML</p>
+        </section>
+
+
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu()
+            {
+                navLinks.style.right = "0"
+            }
+            function hideMenu()
+            {
+                navLinks.style.right = "-200px"
+            }
+
+        </script>
+    </body>
+</html>
